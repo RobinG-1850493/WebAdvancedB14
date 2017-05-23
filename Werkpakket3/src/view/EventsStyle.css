@@ -1,0 +1,43 @@
+body {
+    background-color: khaki;
+    text-align: center;
+}
+
+h1{
+    font-size: 500%;
+}
+
+a{
+    color: darkkhaki;
+}
+
+a:hover {
+    color: lightyellow;
+}
+/*footer*/
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1px;
+    background-color: darkkhaki;
+    color: red;
+}
+
+#footer-info {
+    width: 380px;
+    float: left;
+}
+
+form{
+    text-align: left;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: dotted;
+    border-width: 2px;
+    border-color: darkkhaki;
+    border-radius: 5px;
+    width: 500px;
+}

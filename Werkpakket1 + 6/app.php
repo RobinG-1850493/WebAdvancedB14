@@ -14,7 +14,10 @@ $database = 'Project_web';
 $pdo = null;
 
 try {
-    $pdo = new PDO("mysql:host=localhost;dbname=$database",$user, $password);
+
+    $jsonfile = file_get_contents("output.json");
+    $json_a = json_decode($jsonfile, true);
+    $pdo = new PDO($json_a);
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
     //PDO
